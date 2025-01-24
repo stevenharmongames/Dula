@@ -23,6 +23,13 @@ There are a couple of challenges when it comes to using git (or version control 
 
 The initial setup for a project requires a few steps, but you only have to do it once per project. To set up a Unity project with Git and Git LFS:
 
+you might need to install git / gitbash in addition to whatever gui you like to use (such as github desktop) and run this command at that location to make sure lfs is tracking correctly
+Navigate to the local repo directory in Windows File Explorer, right click inside the directory, and select: Open Git Bash Here
+
+In the Git Bash command window, tell Git you want to use Git LFS by entering: git lfs install
+
+In the Git Bash command window, initialize a new .gitattributes file by entering: git lfs track “*.psd”
+
 ### Preparing your Computer
 
 - Create a [GitHub account](https://github.com/join).
