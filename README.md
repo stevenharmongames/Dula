@@ -8,6 +8,7 @@ Equiping everyone with the ability to face end of life with dignity and a circle
 Providing a plaftform for user recorded stories and resources from community and nursing professionals.
 
 Made for MetaQuest3 using body sdk and voice.
+https://github.com/oculus-samples/Unity-Movement.git#v71.0.1
 
 # Unity + Git + Git LFS
 
