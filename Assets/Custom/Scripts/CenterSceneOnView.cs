@@ -6,7 +6,6 @@ public class CenterSceneOnView : MonoBehaviour
 {
     private GameObject mainCam;
     private float rotAngle = 0;
-    private float targetRot = 0;
 
     void Start()
     {
