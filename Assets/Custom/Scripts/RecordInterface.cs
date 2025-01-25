@@ -8,6 +8,7 @@ using System.Net.Sockets;
 using UnityEngine.Video;
 using UnityEngine.Animations.Rigging;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class RecordInterface : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class RecordInterface : MonoBehaviour
     private string directoryPath = @"C:\Users\steve\Desktop\Recordings";
     private float startTime;
     private float recordingLength;
+    [Tooltip("Level to Load After Recording Finishes")]
+    public string level = "";
 
     // Start is called before the first frame update
     void Start()
@@ -131,6 +134,12 @@ public class RecordInterface : MonoBehaviour
             msgtext.enabled = false;
             msgtext.text = "Your Message";
             StopRecording();
+            blockInput = true;
+            yield return new WaitForSeconds(1);
+            if(level != "")
+            {
+                SceneManager.LoadScene(level);
+            }
         }
     }
 
