@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Share-Steven.unity
     guid: de9138e146e28c94ab04cfb76b7e0ec1
+  - enabled: 1
+    path: Assets/Scenes/Reflection.unity
+    guid: 47815c36a8d84884b842c5b091881b10
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9bd39f64d4383b140b9966f582a7ef2d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5d9c94d242a68534e8cef13ce9580605, type: 2}

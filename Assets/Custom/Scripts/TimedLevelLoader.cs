@@ -14,22 +14,65 @@ public class TimedLevelLoader : MonoBehaviour
     private float skipTime = 1;
     private bool loaded = false;
     public bool quit = false;
+    [Tooltip("If yes, ignore timed part")]
+    public bool funcCall = false;
+
+    public void LoadTargLevel(string level)
+    {
+        StartCoroutine(DelayLoad());
+    }
+
+    private IEnumerator DelayLoad()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(level);
+    }
 
     void Update()
     {
-
-        timeout += Time.deltaTime;
-        if (canskip)
+        if (!funcCall)
         {
-            if (countdown > skipTime)
+            timeout += Time.deltaTime;
+            if (canskip)
             {
-                if (!pressed && Input.anyKey)
+                if (countdown > skipTime)
+                {
+                    if (!pressed && Input.anyKey)
+                    {
+                        if (!quit)
+                        {
+                            if (nextLevel)
+                            {
+                                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene(level);
+                            }
+                        }
+                        else
+                        {
+                            Application.Quit();
+                        }
+                        pressed = true;
+                    }
+                }
+                else
+                {
+                    countdown += Time.deltaTime;
+                }
+            }
+
+
+            if (timeout >= timer)
+            {
+                if (!loaded)
                 {
                     if (!quit)
                     {
                         if (nextLevel)
                         {
-                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
                         }
                         else
                         {
@@ -40,37 +83,9 @@ public class TimedLevelLoader : MonoBehaviour
                     {
                         Application.Quit();
                     }
-                    pressed = true;
+                    loaded = true;
                 }
-            }
-            else
-            {
-                countdown += Time.deltaTime;
             }
         }
-
-
-        if (timeout >= timer)
-        {
-            if (!loaded)
-            {
-                if (!quit)
-                {
-                    if (nextLevel)
-                    {
-                        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-                    }
-                    else
-                    {
-                        SceneManager.LoadScene(level);
-                    }
-                }
-                else
-                {
-                    Application.Quit();
-                }
-                loaded = true;
-            }
-        }
-    }
+    }    
 }

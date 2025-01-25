@@ -8082,6 +8082,7 @@ MonoBehaviour:
   ovrBodyScript: {fileID: 1189186044}
   ovrRetargeterScript: {fileID: 1189186043}
   audioSource: {fileID: 217695385}
+  level: 
 --- !u!114 &1189186043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8133,7 +8134,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189186013}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
   m_Name: 
@@ -10165,8 +10166,8 @@ MonoBehaviour:
   _editor: {fileID: 1482659082}
   _width: 0.2
   _height: 0.15
-  _color: {r: 0, g: 0, b: 0, a: 0.59607846}
-  _borderColor: {r: 1, g: 1, b: 1, a: 0.6509804}
+  _color: {r: 0.13627532, g: 0.19408911, b: 0.34, a: 0.59607846}
+  _borderColor: {r: 0.7843138, g: 0.854902, b: 0.83921576, a: 0.6509804}
   _radiusTopLeft: 0.005
   _radiusTopRight: 0.005
   _radiusBottomLeft: 0.005
@@ -12013,7 +12014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.9803922, g: 0.627451, b: 0.33333334, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
