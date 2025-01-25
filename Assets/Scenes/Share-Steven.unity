@@ -8082,7 +8082,7 @@ MonoBehaviour:
   ovrBodyScript: {fileID: 1189186044}
   ovrRetargeterScript: {fileID: 1189186043}
   audioSource: {fileID: 217695385}
-  level: 
+  level: MainMenuUI
 --- !u!114 &1189186043
 MonoBehaviour:
   m_ObjectHideFlags: 0
