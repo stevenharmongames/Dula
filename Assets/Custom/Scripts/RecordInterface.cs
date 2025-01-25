@@ -19,12 +19,12 @@ public class RecordInterface : MonoBehaviour
     [Tooltip("Bottom Text")]
     public TMP_Text msgtext;
     private bool isrecording = false;
+    private bool blockInput = false;
     private int curTake = 0;
 
     public Animator anim;
     public OVRBody ovrBodyScript;
     public OVRUnityHumanoidSkeletonRetargeter ovrRetargeterScript;
-    public Rig myRig;
 
     private AudioClip recordedClip;
     [SerializeField] AudioSource audioSource;
@@ -58,18 +58,26 @@ public class RecordInterface : MonoBehaviour
 
     public void HitRecord()
     {
-        isrecording = !isrecording;
-        if (isrecording)
+        if (!blockInput)
         {
-            recordingtext.text = "Stop ■";
-        }
-        else
-        {
-            recordingtext.text = "Rec ⦿";
-        }
-        StartCoroutine(RecBlink());
+            isrecording = !isrecording;
+            if (isrecording)
+            {
+                recordingtext.text = "Stop ■";
+            }
+            else
+            {
+                recordingtext.text = "Rec ⦿";
+            }
+            StartCoroutine(RecBlink());
+        }       
     }
-
+    private IEnumerator InputBuffer()
+    {
+        blockInput = true;
+        yield return new WaitForSeconds(3);
+        blockInput = false;
+    }
     private IEnumerator RecBlink()
     {
         if (isrecording)
@@ -82,27 +90,17 @@ public class RecordInterface : MonoBehaviour
             {
                 ovrBodyScript.enabled = false;
                 ovrRetargeterScript.enabled = false;
-                myRig.weight = 0f;
             }
 
-            if (myRig == null)
-            {
-                anim.enabled = true;
-            }
-            yield return new WaitForSeconds(.1f);
-            anim.SetTrigger("TPose");
+            anim.enabled = true;
             yield return new WaitForSeconds(.5f);
             anim.StopPlayback();
-            if (myRig == null)
-            {
-                anim.enabled = false;
-            }
+            anim.enabled = false;
 
             if (ovrBodyScript != null && ovrRetargeterScript != null)
             {
                 ovrBodyScript.enabled = true;
                 ovrRetargeterScript.enabled = true;
-                myRig.weight = 1f;
             }
             StartRecording();
         }
@@ -131,6 +129,7 @@ public class RecordInterface : MonoBehaviour
             msgtext.text = "Recorded!";
             yield return new WaitForSeconds(1);
             msgtext.enabled = false;
+            msgtext.text = "Your Message";
             StopRecording();
         }
     }
