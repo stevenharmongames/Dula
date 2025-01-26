@@ -8,6 +8,8 @@ Steven Harmon, Jason Webb, Tiago Silva, Peggy Yin, Macarena Peralta
 Equiping everyone with the ability to face end of life with dignity and a circle of care and support.
 Providing a plaftform for user recorded stories and resources from community and nursing professionals.
 
+DOWNLOAD APK MIRROR: https://stevenharmongames.itch.io/caregivr
+
 Made for MetaQuest3 using body sdk and voice.
 https://github.com/oculus-samples/Unity-Movement.git#v71.0.1
 
