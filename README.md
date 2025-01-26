@@ -1,4 +1,9 @@
-![Alt text](splashscreen.png)
+![logo of two rings interlocked](splashscreen.png)
+![screenshots of app in use](screenshots.png)
+
+DOWNLOAD APK MIRROR:
+https://stevenharmongames.itch.io/caregivr
+
 # Table 8 - Team: Question Mark - CAREGIVR
 ## Social end of life care VR experience for informed decisions and support
 
