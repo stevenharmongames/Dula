@@ -1,6 +1,9 @@
 ![logo of two rings interlocked](splashscreen.png)
 ![screenshots of app in use](screenshots.png)
 
+DEVPOST:
+https://devpost.com/software/caregivr-tzmqkg
+
 DOWNLOAD APK MIRROR:
 https://stevenharmongames.itch.io/caregivr
 
