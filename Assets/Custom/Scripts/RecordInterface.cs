@@ -43,15 +43,18 @@ public class RecordInterface : MonoBehaviour
         if (Application.platform == RuntimePlatform.Android)
         {
             recscript.directory = Application.persistentDataPath;
+            directoryPath = Application.persistentDataPath;
         }
 #endif
 
 #if UNITY_STANDALONE
                 recscript.directory = System.IO.Directory.GetCurrentDirectory();
+                directoryPath = System.IO.Directory.GetCurrentDirectory();
 #endif
 
 #if UNITY_EDITOR
         recscript.directory = savedir;
+        directoryPath = savedir;
 #endif
 
         filenametext = "take_" + curTake /*+ System.DateTime.Now.ToString()*/  + ".bvh";
