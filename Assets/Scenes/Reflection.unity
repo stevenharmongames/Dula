@@ -9266,6 +9266,7 @@ GameObject:
   - component: {fileID: 1151940046}
   - component: {fileID: 1151940045}
   - component: {fileID: 1151940044}
+  - component: {fileID: 1151940049}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Untagged
@@ -9421,6 +9422,24 @@ Transform:
   - {fileID: 365065104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1151940049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151940043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3878c5116cf51b04e8f71d16d2a76e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgSit: 1.165882
+  avgStand: 1.503125
+  MovingAverageLength: 60
+  sittingType: 1
+  teleportTrans:
+  - {fileID: 1913264561}
 --- !u!1 &1152743976
 GameObject:
   m_ObjectHideFlags: 0
@@ -14674,7 +14693,7 @@ Transform:
   m_GameObject: {fileID: 1965112258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.00008682906, z: -0, w: 1}
-  m_LocalPosition: {x: -0.049, y: 0.877, z: 0.196}
+  m_LocalPosition: {x: 0, y: 1.43, z: 0.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

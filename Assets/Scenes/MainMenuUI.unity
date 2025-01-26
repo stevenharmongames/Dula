@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44202876, g: 0.45022064, b: 0.47379425, a: 1}
+  m_IndirectSpecularColor: {r: 0.44202837, g: 0.4502243, b: 0.4737963, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9808,6 +9808,100 @@ Transform:
   m_Children: []
   m_Father: {fileID: 461538997}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1072569825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072569827}
+  - component: {fileID: 1072569826}
+  m_Layer: 0
+  m_Name: light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1072569826
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072569825}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1072569827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072569825}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.33226976, y: -0.3030684, z: 0.13125423, w: 0.8834697}
+  m_LocalPosition: {x: 0.09751937, y: 6.458171, z: 0.9990217}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 41.81, y: -36.972, z: 2.347}
 --- !u!1 &1073635435
 GameObject:
   m_ObjectHideFlags: 0
@@ -11448,7 +11542,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1433020335}
-  - {fileID: 1886484121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1249554675
@@ -13096,6 +13189,7 @@ GameObject:
   - component: {fileID: 1408217272}
   - component: {fileID: 1408217271}
   - component: {fileID: 1408217270}
+  - component: {fileID: 1408217275}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Untagged
@@ -13252,6 +13346,24 @@ Transform:
   - {fileID: 526627685}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408217275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408217269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3878c5116cf51b04e8f71d16d2a76e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgSit: 1.165882
+  avgStand: 1.503125
+  MovingAverageLength: 60
+  sittingType: 1
+  teleportTrans:
+  - {fileID: 1249554674}
 --- !u!1 &1414627584
 GameObject:
   m_ObjectHideFlags: 0
@@ -13536,11 +13648,12 @@ RectTransform:
   - {fileID: 266639850}
   - {fileID: 212112384}
   - {fileID: 1373754162}
+  - {fileID: 1886484121}
   m_Father: {fileID: 1249554674}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.004, y: 6.25}
+  m_AnchoredPosition: {x: 0.004, y: 6.59}
   m_SizeDelta: {x: 1027.8488, y: 757.4828}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1437305458
@@ -17148,19 +17261,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1249554674}
+    m_TransformParent: {fileID: 1433020335}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ae30710bc97863144b09b30fd7b7fc83, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 105029.266
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae30710bc97863144b09b30fd7b7fc83, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 109709.53
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae30710bc97863144b09b30fd7b7fc83, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 115282.29
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae30710bc97863144b09b30fd7b7fc83, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.179336
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae30710bc97863144b09b30fd7b7fc83, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.621
+      value: 429.97922
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae30710bc97863144b09b30fd7b7fc83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.578
+      value: 55.97461
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae30710bc97863144b09b30fd7b7fc83, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17462,8 +17587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.6, y: -121.99973}
-  m_SizeDelta: {x: 462.2, y: 90.4}
+  m_AnchoredPosition: {x: -54.6, y: -121.99973}
+  m_SizeDelta: {x: 347.8, y: 90.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1905012122
 MonoBehaviour:
@@ -17485,7 +17610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Small Town & Big City
+  m_text: SAMPLE TEXT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20197,3 +20322,4 @@ SceneRoots:
   - {fileID: 1946327619}
   - {fileID: 1536386997}
   - {fileID: 1249554674}
+  - {fileID: 1072569827}

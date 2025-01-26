@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: CAREGIVR
-  productName: QuestionMark
+  companyName: QuestionMark
+  productName: CAREGIVR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -142,6 +142,8 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 11400000, guid: 66116c0288c06eb418bb538e6e2f700e, type: 2}
+  - {fileID: 1547808613494807447, guid: 5d9c94d242a68534e8cef13ce9580605, type: 2}
+  - {fileID: 11400000, guid: 9bd39f64d4383b140b9966f582a7ef2d, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
