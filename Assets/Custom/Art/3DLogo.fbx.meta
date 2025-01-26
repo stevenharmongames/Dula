@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cdc3462bddebf7e43adc4f3453b6cde1
+guid: ae30710bc97863144b09b30fd7b7fc83
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,23 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FBHead_preview_mat
-    second: {fileID: 2100000, guid: dd607eae5e4b72e449f1519dc9ac25da, type: 2}
+      name: M_Ring1
+    second: {fileID: 2100000, guid: 3c22ba3ae8deb9c49bcdcd9db03d4317, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Mouth
-    second: {fileID: 2100000, guid: b5dbb467ee45b88449284eed0e7d3377, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_StevenBake
-    second: {fileID: 2100000, guid: 621a979404981eb4d8ee997bf66e3c42, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: defaultMat
-    second: {fileID: 2100000, guid: 2b797cc68a292fa4f8b6b9420bd0777b, type: 2}
+      name: M_Ring2
+    second: {fileID: 2100000, guid: 576c69ab8763c4c49b11705d59cd2e78, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -55,7 +45,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -110,7 +100,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.001
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

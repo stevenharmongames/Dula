@@ -19,12 +19,6 @@ public class TimedLevelLoader : MonoBehaviour
 
     public void LoadTargLevel(string level)
     {
-        StartCoroutine(DelayLoad());
-    }
-
-    private IEnumerator DelayLoad()
-    {
-        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(level);
     }
 
